@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<title>Basic Calculator</title>
+
+<head>
+  <nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="../home.html">Home</a></li>
+  </ul>
+</nav>
+  <br>
+    <header>SIMPLE CALCULATOR</header>
+<link rel="stylesheet" href="Style.css">
+</head>
+<br>
+<br><br><br>
+
+<body>
+
+    <div class="calcu">
+
+      
+
+      <div class="container">
+      <div class="input"><input type="text" id="display" disabled></div>
+        
+      </div>
+      <div class="buttons">
+        <button onclick="clearDisplay()" class="clear">CLEAR</button>
+        <button onclick="deleteLast()" class="delete">DELETE</button>
+        <button onclick="appendOperator('%')" class="operator operatorG">%</button>
+        <button onclick="appendOperator('/')" class="operator operatorO">÷</button>
+  
+        <button onclick="appendNumber('7')" class="number">7</button>
+        <button onclick="appendNumber('8')" class="number">8</button>
+        <button onclick="appendNumber('9')" class="number">9</button>
+        <button onclick="appendOperator('*')" class="operator operatorO">×</button>
+  
+        <button onclick="appendNumber('4')" class="number">4</button>
+        <button onclick="appendNumber('5')" class="number">5</button>
+        <button onclick="appendNumber('6')" class="number">6</button>
+        <button onclick="appendOperator('-')" class="operator operatorO">−</button>
+  
+        <button onclick="appendNumber('1')" class="number">1</button>
+        <button onclick="appendNumber('2')" class="number">2</button>
+        <button onclick="appendNumber('3')" class="number">3</button>
+        <button onclick="appendOperator('+')" class="operator operatorO">+</button>
+  
+        <button onclick="appendNumber('0')" class="number zero">0</button>
+        <button onclick="appendNumber('.')" class="number point">.</button>
+        <button onclick="calculateResult()" class="equal">=</button>
+      </div>
+    </div>
+
+    <div class="backDisplay"></div>
+    
+
+    <script src="script.js"></script>
+  </body>
+<br><br><br><br><br><br><br>
+
+<div class="GGWP"><hr size="7px"></div>
+  <footer><br>
+  <p>©2026 @JE Laxamana. All Rights Reserved.</p>
+</footer>
+<br>
+</html>
