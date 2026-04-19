@@ -1,0 +1,74 @@
+body{
+    display: flex;
+  flex-direction: column;
+    background-color: burlywood;
+}
+
+.H1 {
+    text-align: center;
+}
+
+.LINK {
+  text-align: center;
+  list-style: none;
+  gap: 100px;
+}
+
+.LINKS a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #0d6efd;
+}
+
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+padding: 15px;
+
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-img img {
+    margin-bottom: 25px;
+  }
+}
