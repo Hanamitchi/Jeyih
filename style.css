@@ -38,7 +38,7 @@ body {
 }
 
 .logo-section {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .logo {
@@ -62,7 +62,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 
 .nav-item {
@@ -79,7 +79,7 @@ body {
 .nav-item::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 23px;
     bottom: 0;
     width: 0;
     height: 2px;
@@ -98,7 +98,7 @@ body {
 }
 
 .nav-num {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     color: #ff6366;
@@ -120,27 +120,8 @@ body {
 .year {
     font-size: 12px;
     color: #666666;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     font-family: 'Space Mono', monospace;
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.icon {
-    font-size: 11px;
-    color: #666666;
-    text-decoration: none;
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    transition: color 0.3s ease;
-}
-
-.icon:hover {
-    color: #ff6366;
 }
 
 /*  BURGER  */
@@ -152,7 +133,7 @@ body {
 .burger div{
   width:25px;
   height:3px;
-  background:rgb(0, 0, 0);
+  background:#ff6366;
   margin:5px;
 }
 
@@ -175,12 +156,12 @@ body {
     top: 20px;
     right: 20px;
     padding: 5px 20px;
-    border: solid 1px #000000;
+    border: solid 2px #db683a;
     border-radius: 40px;
   }
 
   .sidebar-nav.show{
-    display:block;
+    display:block ;
   }
 }
 
@@ -191,30 +172,21 @@ body {
     margin-left: 280px;
     width: calc(100% - 280px);
     background: #ffffff;
-}
-
-.page {
-    padding: 120px 80px;
     min-height: 100vh;
-    display: none;
 }
 
-.page.active {
-    display: block;
+.contact-wrapper {
+    flex: 1;
 }
 
-/* ========== SECTION HEADER ========== */
-
-.section-header {
-    margin-bottom: 60px;
+.main{
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.section-title {
-    font-size: 48px;
-    font-weight: 900;
-    margin-bottom: 16px;
-    letter-spacing: -1px;
-}
+
 
 /* ========== HOME SECTION ========== */
 
@@ -320,16 +292,21 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 33px;
     font-weight: 700;
-    margin-bottom: 70px;
-    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-top: 30px;
     position: relative;
+}
+
+.section-subtitle{
+    margin-bottom: 20px;
+    color: #666666;
+
 }
 
 /* ========== ABOUT SECTION ========== */
 
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 80px;
 }
 
@@ -437,6 +414,7 @@ body {
 
 /* ========== SKILLS SECTION ========== */
 
+
 .skills-text,
 .skills-timeline {
     display: flex;
@@ -444,11 +422,6 @@ body {
     gap: 30px;
 }
 
-.skills-text p {
-    font-size: 18px;
-    color: #666666;
-    line-height: 15px;
-}
 
 .skills-list {
     display: flex;
@@ -526,13 +499,6 @@ body {
 
 /* ========== PROJECTS SECTION ========== */
 
-.project_h1{
-    margin-bottom: 20px;
-}
-
-.project-p{
-    margin-bottom: 15px;
-}
 
 .project-card {
     background-color:#ffffff;
@@ -897,10 +863,12 @@ body {
 
 /* ========== CONTACT FORM ========== */
 
+
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    justify-content: center;
 }
 
 .form-group {
@@ -981,6 +949,8 @@ footer {
     font-size: 14px;
 }
 
+
+
 /* ========== ANIMATIONS ========== */
 
 @keyframes fadeInUp {
@@ -1020,8 +990,8 @@ footer {
         position: relative;
         width: 100%;
         height: auto;
-        padding: 40px 24px;
-        border-bottom: 1px solid #333333;
+        padding: 20px 24px;
+        border-bottom: 2px solid #004eff;
     }
 
     .sidebar-content {
@@ -1040,7 +1010,7 @@ footer {
     }
 
     .nav-item {
-        gap: 24px;
+        gap: 23px;
     }
 
     .sidebar-footer {
@@ -1055,13 +1025,14 @@ footer {
         width: 100%;
     }
 
-    .page {
-        padding: 60px 24px;
-    }
-
     .hero-grid{
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .hero-title {
@@ -1077,7 +1048,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .nav-item {
         gap: 16px;
         font-size: 13px;
