@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JE Laxamana - Contact</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="logo-section">
+                <h1 class="logo">JE Laxamana</h1>
+                <p class="logo-text">Web Developer</p>
+            </div>
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="sidebar-nav" id="nav">
+                <a href="home.html" class="nav-item">
+                    <span class="nav-num">1</span>
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="about.html" class="nav-item">
+                    <span class="nav-num">2</span>
+                    <span class="nav-label">About</span>
+                </a>
+                <a href="skills.html" class="nav-item">
+                    <span class="nav-num">3</span>
+                    <span class="nav-label">Skills</span>
+                </a>
+                <a href="projects.html" class="nav-item">
+                    <span class="nav-num">4</span>
+                    <span class="nav-label">Projects</span>
+                </a>
+                <a href="experience.html" class="nav-item">
+                    <span class="nav-num">5</span>
+                    <span class="nav-label">Experience</span>
+                </a>
+                <a href="certificates.html" class="nav-item">
+                    <span class="nav-num">6</span>
+                    <span class="nav-label">Certificate</span>
+                </a>
+                <a href="contact.html" class="nav-item active">
+                    <span class="nav-num">7</span>
+                    <span class="nav-label">Contact</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <p class="year">&copy; 2026 @JE Laxamana. All Rights Reserved</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+            <div class="main">
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>
+                        Ready to start your next project? Let's talk about your ideas and how I can help bring them to life.
+                    </p>
+
+                    <div class="contact-details">
+                        <h3 class="info-title">Contact Information</h3>
+
+                        <div class="contact-item">
+                            <div class="contact-label"><i class="fas fa-envelope"></i> Email:</div>
+                            <a href="mailto:Jelaxamana008@gmail.com" class="contact-value">Jelaxamana008@gmail.com</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-label"><i class="fas fa-phone"></i> Contact Number:</div>
+                            <a href="tel:+639972405961" class="contact-value">+63 997 240 5961 / +63 999 540 8824</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-label"><i class="fab fa-instagram"></i> Instagram:</div>
+                            <a href="https://instagram.com/jeyih_/" class="contact-value">Jeyih</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-label"><i class="fab fa-linkedin"></i> LinkedIn:</div>
+                            <a href="https://www.linkedin.com/in/JE-laxamana" class="contact-value">JE Laxamana</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-label"><i class="fas fa-rocket"></i> StepUp:</div>
+                            <a href="https://Stepupbyje.netlify.app" class="contact-value">StepUp</a>
+                        </div>
+                    </div>
+
+                    <div class="location-box">
+                        <div class="location-label"><i class="fas fa-map-marker-alt"></i> Based In</div>
+                        <div class="location-text">Tarlac City, Central Luzon, Philippines</div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="success-message" id="successMessage">
+                        ✓ Thanks for reaching out! I'll be in touch soon.
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="8" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            </div>
+
+
+        <footer>&copy; 2026 @JE_Laxamana. All Rights Reserved</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
