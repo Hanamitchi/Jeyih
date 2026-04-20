@@ -10,7 +10,7 @@ async function login() {
   const data = await res.json();
 
   if (res.status === 200) {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   } else {
     document.getElementById("message").innerText = data.message;
   }
